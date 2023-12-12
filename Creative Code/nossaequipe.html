@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<head>
+
+    <html lang="pt-BR">
+
+    </html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/nossaequipe.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Nossa Equipe</title>
+</head>
+
+<body>
+    <div class="sidebar_menu">
+
+        <!-- parte escrita da logo-->
+        <div class="Logo">
+            <div class="Text_Logo">Creative Code</div>
+            <i class='bx bx-menu' id="Button"></i>
+        </div>
+
+
+        <ul class="Nav_Item">
+            <!-- configuração do botão nossa equipe-->
+            <li>
+                <a href="nossaequipe.html">
+                    <i class='bx bx-group'></i>
+                    <span class="Item_Name">Nossa Equipe</span>
+                </a>
+                <span class="Menu_btn">Nossa Equipe</span>
+            </li>
+
+            <!-- configuração do botão home-->
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="Item_Name">Inicio</span>
+                </a>
+                <span class="Menu_btn">Inicio</span>
+            </li>
+            <!-- configuração do botão Projetos-->
+            <li>
+                <a href="projetos.html">
+                    <i class='bx bx-trip'></i>
+                    <span class="Item_Name">Projetos</span>
+                </a>
+                <span class="Menu_btn">Projetos</span>
+            </li>
+            <!-- configuração do botão Contato-->
+            <li>
+                <a href="contato.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="Item_Name">contato</span>
+                </a>
+                <span class="Menu_btn">contato</span>
+            </li>
+            <!-- configuração dos direitos autorais-->
+            <li class="Details">
+                <div class="Child_Details">
+                    <img src="imagens/logocodigocreativo.png" alt="">
+                    <div class="Name_Roll">
+                        <div class="Name">Direitos reservados a</div>
+                        <div class="Roll">Creative Code ₢</div>
+                    </div>
+                </div>
+                <i id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <!-- configuração em js para animação do menu hamburguer-->
+    <script>
+        let sidebar = document.querySelector(".sidebar_menu");
+        let closeBtn = document.querySelector("#Button");
+        let searchBtn = document.querySelector(".bx-search");
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();
+        });
+        searchBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();
+        });
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bxs-x-circle");
+            } else {
+                closeBtn.classList.replace("bxs-x-circle", "bx-menu");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
