@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/logocodigocreativo.png" type="image">
+    <link rel="stylesheet" href="./css/equipe.css">
+    <link rel="stylesheet" href="./css/dark-theme.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Equipe</title>
+</head>
+<body>
+    <div> <!-- botão para alternar tema claro e escuro -->
+        <input type="checkbox" class="checkbox" id="chk" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+    </div>
+    <div class="sidebar_menu">
+        <!-- parte escrita da logo-->
+        <div class="Logo">
+            <div class="Text_Logo">Creative Code</div>
+            <i class='bx bx-menu' id="Button"></i>
+        </div>
+        <ul class="Nav_Item">
+            <!-- configuração do botão home-->
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home'></i>
+                    <span class="Item_Name">Inicio</span>
+                </a>
+                <span class="Menu_btn">Inicio</span>
+            </li>
+            <!-- configuração do botão nossa equipe-->
+            <li>
+                <a href="equipe.html">
+                    <i class='bx bx-group'></i>
+                    <span class="Item_Name">Equipe</span>
+                </a>
+                <span class="Menu_btn">Equipe</span>
+            </li>
+            <!-- configuração do botão Projetos-->
+            <li>
+                <a href="projetos.html">
+                    <i class='bx bx-trip'></i>
+                    <span class="Item_Name">Projetos</span>
+                </a>
+                <span class="Menu_btn">Projetos</span>
+            </li>
+            <!-- configuração do botão Contato-->
+            <li>
+                <a href="contato.html">
+                    <i class='bx bxs-contact'></i>
+                    <span class="Item_Name">Contato</span>
+                </a>
+                <span class="Menu_btn">Contato</span>
+            </li>
+            <!-- configuração dos direitos autorais-->
+            <li class="Details">
+                <div class="Child_Details">
+                    <img src="./assets/logocodigocreativo.png" alt="Logo Código Criativo">
+                    <div class="Name_Roll">
+                        <div class="Name">Direitos reservados a</div>
+                        <div class="Roll">Creative Code ₢</div>
+                    </div>
+                </div>
+                <i id="log_out"></i>
+            </li>
+        </ul>
+    </div>
+    <!-- Link para o arquivo JavaScript externo -->
+    <script src="./script/menu.js"></script>
+    <script src="./script/tema.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+</body>
+</html>
